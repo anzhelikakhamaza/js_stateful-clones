@@ -24,7 +24,7 @@ function transformStateWithClones(initialState, actions) {
         break;
     }
 
-    states.push(currentState);
+    states.push({ ...currentState });
   }
 
   return states;
